@@ -1,6 +1,7 @@
 .banner {
-  margin-top: 10vh;
-  height: 80vh;
+  margin-top: 5vh;
+  /* it was 10 */
+  height: 100vh;
   margin-bottom: -80px;
   color: white;
   object-fit: contain;
@@ -54,5 +55,5 @@
     rgb(37, 37, 37, 0.91),
     #111
   );
-  background-size: 900px auto; /* Set the width to 300px and auto for the height */
+  /* background-size: 900px auto; Set the width to 300px and auto for the height */
 }

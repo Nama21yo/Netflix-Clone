@@ -21,12 +21,15 @@ const Banner = () => {
       }
     })();
   }, []);
+  function truncate(str, n) {
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  }
   return (
     <div
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url('https://image.tmdb.org/t/p/w300${movie?.backdrop_path}')`,
+        backgroundImage: `url('https://image.tmdb.org/t/p/w780${movie?.backdrop_path}')`,
         backgroundPosition: "25% 75%",
         backgroundRepeat: "no-repeat",
       }}
@@ -39,7 +42,7 @@ const Banner = () => {
           <button className="banner_button play">Play</button>
           <button className="banner_button">My List</button>
         </div>
-        {/* <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1> */}
+        <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
       </div>
 
       <div className="banner_fadeBottom"></div>

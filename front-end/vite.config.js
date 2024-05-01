@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
     define: {
       "process.env": env,
     },
-    plugins: [react()],
     base: "/Netflix-Clone/",
+    plugins: [react()],
   };
 });
